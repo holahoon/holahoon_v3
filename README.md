@@ -1,3 +1,12 @@
+# Introduction
+Hello 👋, my name David Kim.
+This is my portfolio website v3. (I know... v3 😱)
+i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided to use Svelte and rebuild my portfolio.
+
+- [ ] i18n (Eng / Kor)
+- [ ] resume using MDX
+- [ ] tbu
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
