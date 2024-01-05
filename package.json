@@ -2,6 +2,12 @@
 	"name": "holahoon-v3",
 	"version": "0.0.1",
 	"private": true,
+	"keywords": [
+		"holahoon",
+		"svelte",
+		"typescript"
+	],
+	"author": "holahoon (David Kim)",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",

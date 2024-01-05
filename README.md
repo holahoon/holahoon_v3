@@ -7,6 +7,19 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 - [ ] resume using MDX
 - [ ] tbu
 
+## Tech Stacks
+
+### Frontend
+
+### Backend
+
+### Libraries
+
+### Code Quality
+- [husky](https://github.com/typicode/husky)
+
+### Testing
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
