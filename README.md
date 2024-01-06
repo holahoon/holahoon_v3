@@ -10,13 +10,16 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 ## Tech Stacks
 
 ### Frontend
+- [Open Props](https://open-props.style)
+- [Lucide Svelte](https://lucide.dev/guide/packages/lucide-svelte)
 
 ### Backend
 
 ### Libraries
 
 ### Code Quality
-- [husky](https://github.com/typicode/husky)
+- [ ] [husky](https://github.com/typicode/husky)
+- [ ] 
 
 ### Testing
 
