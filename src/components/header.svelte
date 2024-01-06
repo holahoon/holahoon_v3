@@ -23,4 +23,12 @@
 </header>
 
 <style lang="scss">
+	header {
+		display: flex;
+		position: sticky;
+		top: 0;
+	}
+
+	nav {
+	}
 </style>

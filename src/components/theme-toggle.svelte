@@ -28,5 +28,6 @@
 	button {
 		padding: var(--size-2);
 		border-radius: var(--radius-6);
+		background-color: var(--surface-1);
 	}
 </style>
