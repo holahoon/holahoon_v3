@@ -1,4 +1,4 @@
-<span aria-hidden="true">
+<span aria-hidden="true" data-testid="hidden screen reader">
 	<slot />
 </span>
 

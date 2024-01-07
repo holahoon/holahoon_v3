@@ -22,6 +22,9 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 - [ ] 
 
 ### Testing
+Unit testing guide with [Testing Library](https://testing-library.com/docs/svelte-testing-library/setup/)
+- [vitest](https://vitest.dev/)
+- [jest-dom](https://github.com/testing-library/jest-dom)
 
 # create-svelte
 

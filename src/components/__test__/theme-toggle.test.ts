@@ -1,12 +1,15 @@
-import { render } from '@testing-library/svelte'
+import { render, screen } from '@testing-library/svelte'
 import ThemeToggle from '$components/theme-toggle.svelte'
 
 describe('Toggle-theme component', () => {
-	const { debug } = render(ThemeToggle)
+	render(ThemeToggle)
+	const toggleTheme = screen.getByRole('button', { name: /Toggle theme/i })
 
 	it('should render', () => {
-		debug()
+		expect(toggleTheme).toBeInTheDocument()
 	})
 
-	it.todo('')
+	it.todo('should render <Sun /> if theme is light')
+	it.todo('should render <Moon /> if theme is dark')
+	it.todo('should render <Laptop /> if theme is system')
 })
