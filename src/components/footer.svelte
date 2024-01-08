@@ -2,6 +2,6 @@
 	const year = new Date().getFullYear()
 </script>
 
-<footer>
+<footer class="">
 	<span>&copy; {year} David Kim</span>
 </footer>

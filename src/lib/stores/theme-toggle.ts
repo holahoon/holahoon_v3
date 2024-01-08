@@ -6,8 +6,12 @@ type Theme = 'light' | 'dark' | 'system'
 const COLOR_SCHEME = 'color-scheme'
 const USER_THEME = 'user-theme'
 
-const userTheme = browser ? ((localStorage.getItem(USER_THEME) ?? 'system') as Theme) : 'system'
-export const theme = writable<Theme>(userTheme)
+export const theme = writable<Theme>(getLocalStorage())
+
+function getLocalStorage(): Theme {
+	if (!browser) return 'system'
+	return (localStorage.getItem(USER_THEME) as Theme) ?? 'system'
+}
 
 function selectTheme(theme: Theme): Theme {
 	switch (theme) {

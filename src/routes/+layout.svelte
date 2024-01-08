@@ -9,10 +9,12 @@
 	<title>Holahoon</title>
 </svelte:head>
 
-<Header />
+<div class="mx-auto my-0 grid h-full max-w-screen-full grid-rows-[auto_1fr_auto]">
+	<Header />
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<Footer />
+	<Footer />
+</div>

@@ -10,8 +10,8 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 ## Tech Stacks
 
 ### Frontend
-- [Open Props](https://open-props.style)
 - [Lucide Svelte](https://lucide.dev/guide/packages/lucide-svelte)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ### Backend
 
@@ -19,7 +19,7 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 
 ### Code Quality
 - [ ] [husky](https://github.com/typicode/husky)
-- [ ] 
+- [ ] [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
 
 ### Testing
 Unit testing guide with [Testing Library](https://testing-library.com/docs/svelte-testing-library/setup/)
