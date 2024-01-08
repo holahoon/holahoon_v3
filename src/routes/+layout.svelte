@@ -9,7 +9,7 @@
 	<title>Holahoon</title>
 </svelte:head>
 
-<div class="mx-auto my-0 grid h-full max-w-screen-full grid-rows-[auto_1fr_auto]">
+<div class="mx-auto my-0 grid h-full max-w-screen-full grid-rows-[auto_1fr_auto] px-4 md:px-12">
 	<Header />
 
 	<main>

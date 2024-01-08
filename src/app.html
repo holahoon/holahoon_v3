@@ -4,8 +4,27 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<script>
+			function setHtmlProperties(theme) {
+				document.documentElement.setAttribute('color-scheme', theme)
+				document.documentElement.className = theme
+			}
+
+			// Check and apply dark mode theme to avoid FOUC
+			const theme = localStorage.getItem('theme')
+			if (theme) setHtmlProperties(theme)
+			else {
+				const isLight = window.matchMedia('(prefers-color-scheme: light)').matches
+				const theme = isLight ? 'light' : 'dark'
+				setHtmlProperties(theme)
+				localStorage.setItem('theme', theme)
+			}
+		</script>
+
 		%sveltekit.head%
 	</head>
+
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>

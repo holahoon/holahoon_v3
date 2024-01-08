@@ -1,36 +1,47 @@
 import { browser } from '$app/environment'
 import { writable } from 'svelte/store'
 
-type Theme = 'light' | 'dark' | 'system'
+type Theme = 'light' | 'dark'
 
-const COLOR_SCHEME = 'color-scheme'
-const USER_THEME = 'user-theme'
+const MATCH = '(prefers-color-scheme: light)'
+const USER_THEME = 'theme'
 
 export const theme = writable<Theme>(getLocalStorage())
 
+function getSystemTheme(): Theme {
+	if (!browser) return 'light'
+
+	console.log(window.matchMedia(MATCH))
+	const isLight = window.matchMedia(MATCH).matches
+	const systemTheme = isLight ? 'light' : 'dark'
+	return systemTheme
+}
+
 function getLocalStorage(): Theme {
-	if (!browser) return 'system'
-	return (localStorage.getItem(USER_THEME) as Theme) ?? 'system'
+	const theme = getSystemTheme()
+	if (!browser) return theme
+
+	const localStorageTheme = (localStorage.getItem(USER_THEME) as Theme) ?? theme
+	setHtmlProperties(localStorageTheme)
+
+	return localStorageTheme
+}
+
+function setHtmlProperties(theme: Theme) {
+	document.documentElement.setAttribute('color-scheme', theme)
+	document.documentElement.className = theme
 }
 
 function selectTheme(theme: Theme): Theme {
-	switch (theme) {
-		case 'system':
-			return 'light'
-		case 'light':
-			return 'dark'
-		case 'dark':
-			return 'system'
-		default:
-			return 'system'
-	}
+	return theme === 'light' ? 'dark' : 'light'
 }
 
 export function toggleTheme() {
 	theme.update((currentTheme) => {
 		const newTheme = selectTheme(currentTheme)
 
-		document.documentElement.setAttribute(COLOR_SCHEME, newTheme)
+		setHtmlProperties(newTheme)
+
 		localStorage.setItem(USER_THEME, newTheme)
 
 		return newTheme

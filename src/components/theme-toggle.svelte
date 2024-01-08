@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { scale } from 'svelte/transition'
-	import Laptop from 'lucide-svelte/icons/laptop'
 	import Sun from 'lucide-svelte/icons/sun'
 	import Moon from 'lucide-svelte/icons/moon'
 	import { theme, toggleTheme } from '$lib/stores/theme-toggle'
@@ -12,13 +11,9 @@
 		<span in:scale>
 			<Sun />
 		</span>
-	{:else if $theme === 'dark'}
-		<span in:scale>
-			<Moon />
-		</span>
 	{:else}
 		<span in:scale>
-			<Laptop />
+			<Moon />
 		</span>
 	{/if}
 	<ScreenReader>Toggle theme</ScreenReader>
