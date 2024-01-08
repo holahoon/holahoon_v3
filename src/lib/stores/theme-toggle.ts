@@ -11,7 +11,6 @@ export const theme = writable<Theme>(getLocalStorage())
 function getSystemTheme(): Theme {
 	if (!browser) return 'light'
 
-	console.log(window.matchMedia(MATCH))
 	const isLight = window.matchMedia(MATCH).matches
 	const systemTheme = isLight ? 'light' : 'dark'
 	return systemTheme

@@ -16,7 +16,7 @@
 	<a
 		href="/"
 		class={cn(
-			'inline-block py-4 font-bold transition-colors duration-200',
+			'inline-block py-3 text-xl font-bold transition-colors duration-200',
 			path === '/' && 'text-violet-700'
 		)}>Holahoon</a
 	>
