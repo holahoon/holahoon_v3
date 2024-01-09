@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import { links } from '$config/route'
+	import { headerConfig } from '$config/route'
 	import { cn } from '$lib/utils/utils'
 	import ThemeToggle from './theme-toggle.svelte'
 
@@ -18,12 +18,12 @@
 		class={cn(
 			'inline-block py-3 text-xl font-bold transition-colors duration-200',
 			path === '/' && 'text-violet-700'
-		)}>Holahoon</a
+		)}>{headerConfig.title}</a
 	>
 
 	<nav class="ml-auto flex">
 		<ul class="mr-8 flex">
-			{#each links as { to, title }}
+			{#each headerConfig.links as { to, title }}
 				<li>
 					<a
 						href={to}

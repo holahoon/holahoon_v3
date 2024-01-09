@@ -16,6 +16,7 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 ### Backend
 
 ### Libraries
+- [mdsvex](https://mdsvex.com/docs)
 
 ### Code Quality
 - [ ] [husky](https://github.com/typicode/husky)
