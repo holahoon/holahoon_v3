@@ -1,7 +1,7 @@
 ---
-title: resume
+title: Holahoon Resume
 description: Dk's resume
-date: '01-09-2024'
+date: '2024-01-09'
 ---
 
 # David Kim
@@ -9,7 +9,7 @@ date: '01-09-2024'
 blah blah blah - introduction
 
 ## Skills
-- Language: HTML, CSS, JavaScript
+- Language: `HTML`, CSS, JavaScript
 - Frontend: TypeScript React, Next.js, Svelte/SvelteKit, Sass, Styled-components, TailwindCSS, ...
   - Tools: 
 - Backend: Node.js, Express.js, Nest.js

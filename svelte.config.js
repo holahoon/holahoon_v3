@@ -9,16 +9,18 @@ const mdsvexOptions = {
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [vitePreprocess(), mdsvex({ mdsvexOptions })],
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter(),
 		alias: {
 			$components: 'src/components',
+			$types: 'src/types',
 			$styles: 'src/styles',
-			$config: 'src/config'
+			$config: 'src/config',
+			$contents: 'src/contents'
 		}
 	},
-	extensions: ['.svelte', 'mdsvex']
+	extensions: ['.svelte', '.md']
 }
 
 export default config
