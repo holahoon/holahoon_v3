@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@fontsource-variable/open-sans':
-    specifier: ^5.0.21
-    version: 5.0.21
+  '@fontsource-variable/inter':
+    specifier: ^5.0.16
+    version: 5.0.16
   '@fontsource-variable/roboto-mono':
     specifier: ^5.0.17
     version: 5.0.17
@@ -408,8 +408,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource-variable/open-sans@5.0.21:
-    resolution: {integrity: sha512-aLE1iTSx2J0NZw3capyh19GALUXiELEG4bgwABELVaZdeRHMTU5aApHa+KRC9KlfH0DzaDDLB5aSQBAOhy/R5Q==}
+  /@fontsource-variable/inter@5.0.16:
+    resolution: {integrity: sha512-k+BUNqksTL+AN+o+OV7ILeiE9B5M5X+/jA7LWvCwjbV9ovXTqZyKRhA/x7uYv/ml8WQ0XNLBM7cRFIx4jW0/hg==}
     dev: false
 
   /@fontsource-variable/roboto-mono@5.0.17:

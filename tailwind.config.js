@@ -16,12 +16,19 @@ export default {
 							'margin-top': '1.5em',
 							'margin-bottom': '0.5em'
 						},
+						h3: {
+							'margin-bottom': '0.5em'
+						},
 						ul: {
 							'padding-left': '1rem'
 						},
 						li: {
 							margin: '0.4em 0',
-							'line-height': 1.4
+							'line-height': 1.4,
+							color: 'hsl(var(--foreground))'
+						},
+						p: {
+							color: 'hsl(var(--foreground))'
 						},
 						hr: {
 							'margin-bottom': '1em'
@@ -31,7 +38,7 @@ export default {
 			},
 			fontFamily: {
 				mono: ['Roboto Mono Variable', defaultTheme.fontFamily.mono],
-				sans: ['Open Sans Variable', defaultTheme.fontFamily.sans]
+				sans: ['inter', defaultTheme.fontFamily.sans]
 			},
 			screens: { full: '1024px' },
 			colors: {

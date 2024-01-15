@@ -11,15 +11,15 @@
 		</slot>
 	</ExternalLink>
 
-	<span class="text-md text-primary/80 sm:ml-4">
+	<span class="text-md font-normal text-primary/80 sm:ml-4">
 		<slot name="location">
 			<span class="text-red-600">Missing company location</span>
 		</slot>
 	</span>
 
-	<span class="text-sm text-primary/80 sm:ml-2">
+	<i class="text-sm font-normal text-primary/80 sm:ml-2">
 		<slot name="date">
 			<span class="text-red-600">Missing date</span>
 		</slot>
-	</span>
+	</i>
 </h4>

@@ -36,7 +36,7 @@ date: '2024-01-09'
 <Company url="https://www.yeoboya.com/member/login/pcIndex?isCompany=false">
   <svelte:fragment slot="name">Yeoboya Corp.</svelte:fragment>
   <svelte:fragment slot="location">📍 Seoul, South Korea</svelte:fragment>
-  <svelte:fragment slot="date">(January 2021 - April 2023)</svelte:fragment>
+  <svelte:fragment slot="date">(January 2021 - April 2021)</svelte:fragment>
 </Company>
 
 - Developed and implemented user interface components for an online radio broadcast platform, employing React.js coupled with TypeScript.
