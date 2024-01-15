@@ -3,8 +3,32 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class',
 	theme: {
 		extend: {
+			typography: {
+				DEFAULT: {
+					css: {
+						code: false,
+						'code::before': false,
+						'code::after': false,
+						h2: {
+							'margin-top': '1.5em',
+							'margin-bottom': '0.5em'
+						},
+						ul: {
+							'padding-left': '1rem'
+						},
+						li: {
+							margin: '0.4em 0',
+							'line-height': 1.4
+						},
+						hr: {
+							'margin-bottom': '1em'
+						}
+					}
+				}
+			},
 			fontFamily: {
 				mono: ['Roboto Mono Variable', defaultTheme.fontFamily.mono],
 				sans: ['Open Sans Variable', defaultTheme.fontFamily.sans]
@@ -50,6 +74,5 @@ export default {
 			}
 		}
 	},
-	darkMode: 'class',
 	plugins: [require('@tailwindcss/typography')]
 }

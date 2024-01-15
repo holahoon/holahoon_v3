@@ -4,7 +4,7 @@
  */
 import { error, json } from '@sveltejs/kit'
 import type { RequestHandler } from './$types'
-import type { ResumeMetadata, Resume } from '$types/contents/types'
+import type { ResumeMetadata, Resume } from '$lib/types/contents/types'
 import { ResumeMetadataSchema } from '$lib/utils/validation'
 
 const getResumeMarkdown = async (): Promise<Resume> => {

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores'
-	import { headerConfig } from '$config/route'
+	import { headerConfig } from '$lib/config/route'
 	import { cn } from '$lib/utils/utils'
 	import ThemeToggle from './theme-toggle.svelte'
 

@@ -1,0 +1,3 @@
+.prose code:not(pre > code) {
+	@apply relative rounded bg-secondary px-1.5 py-1 font-mono text-[calc(1em-(1em*0.15))];
+}

@@ -1,10 +1,12 @@
 import adapter from '@sveltejs/adapter-auto'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import { mdsvex } from 'mdsvex'
+import remarkGfm from 'remark-gfm'
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
-	extensions: ['.md']
+	extensions: ['.md'],
+	remarkPlugins: [remarkGfm]
 }
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -13,10 +15,6 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$components: 'src/components',
-			$types: 'src/types',
-			$styles: 'src/styles',
-			$config: 'src/config',
 			$contents: 'src/contents'
 		}
 	},

@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/svelte'
-import ScreenReader from '$components/screen-reader.svelte'
+import ScreenReader from '$lib/components/screen-reader.svelte'
 
 describe('Screen-reader component by test-id', () => {
 	render(ScreenReader)

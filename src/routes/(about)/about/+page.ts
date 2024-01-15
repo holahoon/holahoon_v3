@@ -1,5 +1,5 @@
 import { error } from '@sveltejs/kit'
-import type { Resume } from '$types/contents/types'
+import type { Resume } from '$lib/types/contents/types'
 
 export async function load() {
 	try {
