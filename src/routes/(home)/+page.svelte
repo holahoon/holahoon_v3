@@ -26,6 +26,10 @@
 				},
 				1300
 			)
+
+		return () => {
+			tl.pause()
+		}
 	})
 </script>
 
