@@ -12,6 +12,7 @@ i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided 
 ### Frontend
 - [Lucide Svelte](https://lucide.dev/guide/packages/lucide-svelte)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [gsap]()
 
 ### Backend
 
