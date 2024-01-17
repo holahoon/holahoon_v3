@@ -4,6 +4,8 @@
 	import { cn } from '$lib/utils/utils'
 	import ThemeToggle from './theme-toggle.svelte'
 
+	export let headerHeight: number
+
 	let path = ''
 	$: updatePath($page.url.pathname)
 
@@ -12,12 +14,15 @@
 	}
 </script>
 
-<header class="flex items-center">
+<header
+	bind:clientHeight={headerHeight}
+	class="sticky left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-screen-full items-center bg-background px-4 md:px-12"
+>
 	<a
 		href="/"
 		class={cn(
 			'inline-block py-3 text-xl font-bold transition-colors duration-200',
-			path === '/' && 'text-violet-700'
+			path === '/' && 'text-theme'
 		)}>{headerConfig.title}</a
 	>
 
@@ -27,12 +32,12 @@
 				<li>
 					<a
 						href={to}
-						class="relative inline-block p-4 transition-colors duration-200 hover:text-violet-700"
+						class="hover:text-theme relative inline-block p-4 transition-colors duration-200"
 					>
 						{title}
 						<span
 							class={cn(
-								'absolute bottom-0 left-0 h-[2px] w-full origin-right scale-x-0 bg-violet-700 transition-transform duration-300',
+								'bg-theme absolute bottom-0 left-0 h-[2px] w-full origin-right scale-x-0 transition-transform duration-300',
 								path === to && 'scale-x-1 origin-left'
 							)}
 						/>

@@ -42,6 +42,7 @@ export default {
 			},
 			screens: { full: '1024px' },
 			colors: {
+				theme: '#6d28d9',
 				background: 'hsl(var(--background))',
 				border: 'hsl(var(--border))',
 				foreground: 'hsl(var(--foreground))',
@@ -78,6 +79,9 @@ export default {
 			},
 			boxShadow: {
 				nav: '0px 1px 6px 0px hsl(var(--accent))'
+			},
+			textDecorationColor: {
+				theme: '#6d28d9'
 			}
 		}
 	},
