@@ -4,17 +4,15 @@ This is my portfolio website v3. (I know... v3 😱)
 i got into [Svelte](https://svelte.dev/) and just fell in love with it. Decided to use Svelte and rebuild my portfolio.
 
 - [ ] i18n (Eng / Kor)
-- [ ] resume using MDX
-- [ ] tbu
+- [x] resume using MDX
+- [ ] integrate Obsidian md
 
 ## Tech Stacks
 
 ### Frontend
 - [Lucide Svelte](https://lucide.dev/guide/packages/lucide-svelte)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [gsap]()
-
-### Backend
+- [anime.js](https://animejs.com/)
 
 ### Libraries
 - [mdsvex](https://mdsvex.com/docs)
